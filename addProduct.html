@@ -17,7 +17,7 @@
         </div>
         <!--NAVIGATION BAR-->
         <ul class="navigation">
-            <a href="sanpham.html" title="Quản lý sản phẩm" class="navigation-item-selected"><li>Quản lý sản phẩm</li></a>
+            <a href="product.html" title="Quản lý sản phẩm" class="navigation-item-selected"><li>Quản lý sản phẩm</li></a>
         </ul><!--NAVIGATION BAR-->
     </div><!--END HEADER-->
     
@@ -27,9 +27,15 @@
         	Tên sản phẩm:<br/>
             <input type="text" class="txt" name="txtTenDanhMuc" id="sanpham" required style="width:300px;" /><br/>
             Danh mục:<br/>
-            <input type="text" class="txt" name="txtTenDanhMuc" id="danhmuc" required style="width:300px;" /><br/>
+            <select id="danhmuc" required style="width:323px; height: 30px;">
+                <option value="Iphone">Iphone</option>
+                <option value="Oppo">Oppo</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Phukien">Phukien</option>
+              </select> <br>
+            <!-- <input type="text" class="txt" name="txtTenDanhMuc" id="danhmuc" required style="width:300px;" /><br/> -->
             Hình ảnh:<br/>
-            <input type="text" class="txt" name="txtTenDanhMuc" id="anh" required style="width:300px;" /><br/>
+            <input type="file" class="txt" name="anh" id="anh" required style="width:300px;" /><br/>
             Số lượng:<br/>
             <input type="text" class="txt" name="txtTenDanhMuc" id="soluong" required style="width:300px;" /><br/>
             Đơn giá:<br/>
@@ -38,7 +44,7 @@
             <input type="text" class="txt" name="txtTenDanhMuc" value="true" id="status" required style="width:300px;" /><br/><br>
             <input type="submit" class="btn" name="btnThemDanhMuc" onclick="add()" value="Thêm" />
     </div>
-    
+
         <div class="danhsach">
         	<ul class="danhsach-header">
                 <li style="width:60px;">ID</li>
