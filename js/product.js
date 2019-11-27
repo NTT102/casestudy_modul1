@@ -1,14 +1,4 @@
-// let listproduct = [
-//     ["tung","hoc code"]
-// ];
 
-// function add(){
-//     let danhmuc =  document.getElementById('danhmuc').value;
-//     let  name = document.getElementById('sanpham').value;
-//     let sp =[name,danhmuc]
-//     listproduct.push(sp);
-//     showProduct();
-// } 
 
 this.addProduct = function () {
     let product = document.getElementById("newProduct").value;
@@ -21,23 +11,25 @@ this.addProduct = function () {
     }
 };
 
-function logOut() {
-    console.log('hahaha')
-}
-
-
 let products = function () {
     //list product
     this.listProducts = [
-        ["tung", "hoc code"]
+        ["tung", "hoc code","C:\Users\NTT\Desktop","30","200.000"]
     ];
     //add
     this.addProduct = function () {
         let danhmuc = document.getElementById('danhmuc').value;
         let name = document.getElementById('sanpham').value;
-        let sp = [name, danhmuc]
+        let anh = document.getElementById('anh').value;
+        let soluong = document.getElementById('soluong').value;
+        let dongia = document.getElementById('dongia').value;
+        let sp = [name, danhmuc, anh, soluong, dongia]
+        if (danhmuc === "" && name === "") {
+            alert("Vui long nhap vao ten.");
+        } else {
         this.listProducts.push(sp);
         this.showProduct();
+        }
     }
     //edit
     this.edit = function () {
@@ -52,10 +44,14 @@ let products = function () {
         let sout = '';
         for (i = 0; i < this.listProducts.length; i++) {
             sout += '<ul class ="danhsach-item">';
-            sout += '<li>' + (i + 1) + '</li>';
-            sout += '<li>' + this.listProducts[i][0] + '</li>';
-            sout += '<li>' + this.listProducts[i][1] + '</li>';
-            sout += '<li><button class="button" type="button" onclick="deleteSp('+i+')" value="Xoa">Xoa</button>'
+            sout += '<li style="width:60px;">' + (i + 1) + '</li>';
+            sout += '<li style="width:250px;">' + this.listProducts[i][0] + '</li>';
+            sout += '<li style="width:200px;">' + this.listProducts[i][1] + '</li>';
+            sout += '<li style="width:200px;">' + this.listProducts[i][2] + '</li>';
+            sout += '<li style="width:200px;">' + this.listProducts[i][3] + '</li>';
+            sout += '<li style="width:130px;">' + this.listProducts[i][4] + '</li>';
+            sout += '<li><button class="button" type="button" onclick="deleteSp('+i+')" style="float: right;">Xoa</button>'
+            sout += '<li><button class="button" type="button" onclick="deleteSp('+i+')" style="float: right;">Sửa</button>'
             sout += '</ul>';
         }
         document.getElementById('result').innerHTML = sout;
