@@ -43,15 +43,6 @@ a:hover, a:focus
 	
 	display:inline-block;
 }
-.dangnhap
-{
-	width:500px;
-	padding:20px;
-	margin:200px auto 0 auto;
-	background-color:rgb(108, 134, 114);
-	
-	text-align:center;
-}
 .txt
 {
 	border:1px solid rgb(108, 134, 114);
@@ -61,11 +52,6 @@ a:hover, a:focus
 	font-family:"segoe ui semilight", "segoe ui", tahoma, arial;
 	font-size:14px;
 }
-.dangnhap .txt
-{
-	width:80px;
-	margin-right:10px;
-}
 .btn
 {
 	padding:6px 10px 4px 10px;
@@ -73,16 +59,6 @@ a:hover, a:focus
 	border:none;
 	border-bottom:3px solid rgb(104, 168, 173);
 	color:#FFF;
-	
-	-webkit-transition: all 50ms ease-in-out;
-	-moz-transition: all 50ms ease-in-out;
-	-ms-transition: all 50ms ease-in-out;
-	-o-transition: all 50ms ease-in-out;
-	transition: all 50ms ease-in-out;
-	
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
 }
 .btn:hover
 {
@@ -174,19 +150,6 @@ a:hover, a:focus
 	font-size:18px;
 	font-weight:bold;
 }
-.timkiem
-{
-	float:right;
-	width:300px;
-	background-color:rgb(108, 134, 114);
-	padding:2px;
-}
-.ketquatimkiem
-{
-	padding:5px 0 5px 0;
-	font-weight:bold;
-	display:inline-block;
-}
 .danhsach
 {
 	overflow:hidden;
@@ -223,11 +186,6 @@ a:hover, a:focus
 	list-style:none;
 	border-bottom:1px solid rgb(108, 134, 114);
 	
-	-webkit-transition: all 100ms ease-in-out;
-	-moz-transition: all 100ms ease-in-out;
-	-ms-transition: all 100ms ease-in-out;
-	-o-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
 }
 
 .danhsach-chitiet
@@ -244,16 +202,7 @@ a:hover, a:focus
 	-webkit-box-shadow: inset 0px 0px 50px -5px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0px 0px 50px -5px rgba(0, 0, 0, 0.3);
 }
-.danhsach-subitem-header
-{
-	overflow:hidden;
-	padding:6px 15px 6px 75px;
-	margin:0px;
-	font-weight:bold;
-	
-	list-style:none;
-	border-bottom:1px dashed rgb(145, 166, 150);
-}
+
 .danhsach-subitem-item
 {
 	overflow:hidden;
@@ -264,47 +213,10 @@ a:hover, a:focus
 	border-bottom:1px dashed rgb(145, 166, 150);
 }
 
-.editField
-{
-	margin:0;
-	width:200px;
-	border:none;
-	background-color:transparent;
-	font-family:"segoe ui semilight", "segoe ui", tahoma, arial;
-	font-size:14px;
-}
 .danhsach-item:hover
 {
 	background-color:rgb(196, 212, 175);
 }
-.editField-Focus
-{
-	border:1px solid rgb(196, 212, 175);
-	background-color:#FFF;
-	padding:0 4px;
-}
-.lnkSua
-{
-	font-weight:bold;
-}
-.lnkXoa
-{
-	color:rgb(217, 23, 29);
-	font-weight:bold;
-}
-.lnkXoa:hover, .lnkXoa:focus
-{
-	outline:1px dotted rgb(217, 23, 29);
-}
-.danhsach-navigation
-{
-	overflow:hidden;
-	margin-top:10px;
-	padding:2px;
-	text-align:right;
-}
-.danhsach-navigation label
-{
-	margin:0 10px;
-}
+
+
 
