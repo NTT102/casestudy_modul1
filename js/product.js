@@ -112,9 +112,9 @@ let products = function () {
             sout += '<li style="width:200px;">' + this.listProducts[i].total + '</li>';
             sout += '<li style="width:130px;">' + this.listProducts[i].price + '</li>';
             sout += '<li style="width:130px;">' + this.listProducts[i].status + '</li>';
-            sout += '<li><button class="button" type="button" onclick="deleteSp(' + i + ')">Xoa</button>';
-            sout += '<li><button class="button" type="button" onclick="editSp(' + i + ')">Sửa</button>';
-            sout += '<li><button class="button" type="button" onclick="saveSp(' + i + ')">Save</button>';
+            sout += '<li><button class="btn" type="button" onclick="deleteSp(' + i + ')">Xoá</button>';
+            sout += '<li><button class="btn" type="button" onclick="editSp(' + i + ')">Sửa</button>';
+            sout += '<li><button class="btn" type="button" onclick="saveSp(' + i + ')">Save</button>';
             sout += '</ul>';
         }
         this.saveStore();
